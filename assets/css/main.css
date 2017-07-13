@@ -1498,7 +1498,7 @@
 		}
 
 		h1 {
-			font-size: 60px;
+			font-size: 213px;
 			line-height: 1.75em;
 		}
 
@@ -2007,11 +2007,11 @@
 				.image.fitting {
 					display: block;
 					margin: 0 0 2em 0;
-					width: 100%;
+					
 				}
 
 					.image.fitting img {
-						width: 100%;
+					
 					}
 
 
@@ -2655,8 +2655,22 @@
 
 .relative {
   position: relative;
-  margin-top: -350px;
-	text-align: center;
+ width: 500px;
+ height: 500px;
+ margin-top: -350px;
+ margin-bottom: 20px;
+text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+
+	.relative {
+        max-width: 400px;
+        max-height: 400px;
+		margin-top: 0px;
+		text-align: center;
+	}
+
 }
 
 	.wrapper {
@@ -2679,7 +2693,7 @@
 			@media screen and (max-width: 980px) {
 
 				.wrapper > .inner {
-					width: 80%;
+					width: 90%;
 				}
 
 			}
@@ -2844,7 +2858,20 @@
 
 		.wrapper.style2 {
 			background-color: #BABDC0;
+			padding: 6em 0 50px 0;
+
 		}
+
+
+			@media screen and (max-width: 736px) {
+
+		.wrapper.style2 {
+			background-color: #BABDC0;
+			padding: 0 0 0 0;
+
+		}
+
+			}
 
 		.wrapper.style3 {
 			background-color: #505393;
@@ -3479,7 +3506,6 @@ display: block;
 
 		#banner p {
 			letter-spacing: 0.225em;
-			text-transform: uppercase;
 		}
 
 			#banner p a {
@@ -3602,11 +3628,13 @@ display: block;
 	margin: 40px auto 20px auto;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 436px) {
 
 	.bannerins {
+		position: absolute;
+		top: 50px;
 		display: block;
-		margin: 40px auto 20px auto;
+		margin: 0px auto 0px auto;
 	}
 
 	.banlogo {
@@ -3690,6 +3718,10 @@ display: block;
 		text-align: center;
 	}
 
+
+
+
+
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
@@ -3746,6 +3778,9 @@ display: block;
 	body.is-mobile #main > header {
 		background-attachment: scroll;
 	}
+
+
+
 
 /* Footer */
 
@@ -3852,10 +3887,10 @@ display: block;
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: url("../../images/banner.jpg");
-		background-image: url("../../images/banner.jpg");
-		background-image: url("../../images/banner.jpg");
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner2.jpg");
+		background-image: url("../../images/banner2.jpg");
+		background-image: url("../../images/banner2.jpg");
+		background-image: url("../../images/banner2.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -3864,3 +3899,10 @@ display: block;
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+.element {display:none;}
+    
+    @media screen and (max-width: 600px) {
+    .element{ display: inline;}
+    }
+
