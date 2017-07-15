@@ -8,6 +8,17 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Campton-Bold';
+	src: url('Campton-Bold.eot');
+	src: url('Campton-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Campton-Bold.woff') format('woff'),
+		url('Campton-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 @import url(font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
